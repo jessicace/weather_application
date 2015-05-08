@@ -1,0 +1,43 @@
+dt {
+    text-align: left;
+    margin: 0;
+}
+
+.cities {
+    position: relative;
+    min-height: 100px;
+}
+
+.cities:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url();
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.1;
+}
+
+.cities:hover:before {
+    opacity: 0.5;
+}
+
+.cities.cloudy:before {
+    background-image: url(http://fc06.deviantart.net/fs70/i/2011/134/d/a/cloudy_sky_by_thy_darkest_hour-d3gcxm0.jpg);
+}
+
+.cities.clear-night:before {
+    background-image: url(http://static-4.nexusmods.com/15/images/110/3695874-1327625201.jpg);
+}
+
+.cities.rain:before {
+    background-image: url(http://www.nquire-it.org/files/image/1671266/1_See_It.jpg);
+}
+
+.cities.partly-cloudy-night:before {
+    background-image: url(http://i.pbase.com/u34/silverbowff/upload/41237787.CloudyNight32505web3.jpg);
+}
